@@ -1,11 +1,19 @@
+/***
+* superclass - Exercise 1/Assignment 4. 20160930
+* @author: Laxmana Thapa
+* @version: 1.0
+**/
 package com.assignment_4.superclasses;
-
 public class Human {
-	// Attributes for the class
+	/*Attributes for the class
+	 * 
+	 */
 	protected String name;
 	protected int age;
 
-	// Constructor for the class
+	/* Constructor for the class
+	 * 
+	 */
 	public Human(String name,int age) {
 		super();
 		this.name = name;

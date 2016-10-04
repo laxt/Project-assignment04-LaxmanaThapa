@@ -1,5 +1,10 @@
-package com.assignment_4.main;
+/***
+* Main - Exercise 1/Assignment 4. 20161003
+* @author: Laxmana Thapa
+* @version: 1.0
+**/
 
+package com.assignment_4.main;
 import com.assignment_4.subclasses.BankCustomer;
 import com.assignment_4.subclasses.PersonalAccount;
 import com.assignment_4.subclasses.SavingAccount;
@@ -7,7 +12,9 @@ import com.assignment_4.superclasses.BankAccount;
 
 public class Main {
 	public static void main(String[] args){
-		// Initializing and constructor
+		/*Initializing and constructor
+		 * 
+		 */
 		String account="";
 		BankCustomer bc = new BankCustomer("Rafael",30);
 		bc.addAccount(new BankAccount());
@@ -18,7 +25,9 @@ public class Main {
 
 		
 		
-		// Depositing to the Account
+		/* Depositing to the Account
+		 * 
+		 */
 		account=bc.getCustomerAccounts().get(0).getAccountNumber();
 		System.out.println("Depositing 30.0 to the first account");
 		bc.depositToAccount(account, 30.0);
@@ -26,7 +35,9 @@ public class Main {
 		
 
 
-		// Withdrawing from the Account
+		/* Withdrawing from the Account
+		 * 
+		 */
 		System.out.println("Withdrawing 200.0 from the first account");
 		account=bc.getCustomerAccounts().get(1).getAccountNumber();
 		bc.withdrawFromAccount(account, 200.0);
@@ -34,7 +45,9 @@ public class Main {
 		
 
 		
-		// Depositing to the Account 
+		/* Depositing to the Account
+		 *  
+		 */
 
 		System.out.println("Depositing 200.0 from the first account");
 		account=bc.getCustomerAccounts().get(2).getAccountNumber();
